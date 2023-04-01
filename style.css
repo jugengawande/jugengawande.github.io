@@ -24,7 +24,8 @@ header {
     -webkit-backdrop-filter: blur(15px);
     width: 100%;
     position: fixed;    
-    padding: 5vh;
+    padding: 2rem;
+    height: 10%;
 }
 
 
@@ -45,7 +46,7 @@ header {
     font-weight: lighter;
     line-height: 97%;
     color: white;
-    padding: 5%;
+    padding: 5rem 0;
 }
 
 
@@ -67,9 +68,15 @@ header {
     padding: 8px;
     font-weight: bold;
     font-size: 18px;
-    color: rgb(255, 204, 0);
+    color: rgb(50, 50, 50);
 
 }
+
+.navbar-items:hover {
+    color: rgb(145, 114, 174);
+
+}   
+
 
 a {
     text-decoration: none;
@@ -116,3 +123,18 @@ a {
   .project-3 {
     background-color: rgb(255, 255, 255);
   }
+
+
+.fade-in {
+    animation: fadeInAnimation ease 3s;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        }
+}
