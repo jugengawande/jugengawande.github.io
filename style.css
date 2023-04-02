@@ -19,13 +19,13 @@ footer {
 }
 
 header {
-
+/* 
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); */
     width: 100%;
-    position: fixed;    
+    /* position: fixed;     */
     padding: 2rem;
-    height: 10%;
+    height: 10vh;
 }
 
 
@@ -39,6 +39,9 @@ header {
     
 }
 
+
+
+
 .landing {
     font-size: 18vh;
     text-align: left;
@@ -46,7 +49,7 @@ header {
     font-weight: lighter;
     line-height: 97%;
     color: white;
-    padding: 5rem 0;
+    /* padding: 1rem 0; */
 }
 
 
@@ -90,13 +93,15 @@ a {
       scroll-snap-type: y mandatory;
       height: 100vh;
       overflow-y: scroll;
-      padding: 38rem 3rem ;  };
+      background-color: rgb(225, 225, 225);
+    };
   }
   
   .section {
     color: white;
-    /* position: relative; */
+    /* position: inherit; */
 
+    padding-top: 5;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
@@ -111,22 +116,8 @@ a {
   }
 
 
-
-  .project-1 {
-    background-color: rgb(255, 255, 255);
-  }
-
-  .project-2 {
-    background-color: rgb(255, 255, 255);
-  }
-
-  .project-3 {
-    background-color: rgb(255, 255, 255);
-  }
-
-
 .fade-in {
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 1s;
 }
 
 
@@ -141,7 +132,8 @@ a {
 
 
 .project-block {
-    width:60em;
+    /* width:60em; */
+    /* display: flex; */
     line-height: 5rem ;
 }
 
@@ -187,18 +179,30 @@ a {
     border-radius: 5em;
 
 
-    margin-top: 25px;
+    margin: 25px 0 ;
     color: grey;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(225, 225, 225);
 }
 
 
 .fancy-btn:hover {
-    background-color: rgb(145, 114, 174);
+    background-color: rgb(214, 203, 225);
     color: rgb(57, 23, 72);
     border-color: rgb(57, 23, 72);
 }
 
 .project-des {
     padding: 25vh;
+}
+
+.col {
+    flex:50%;
+    padding: 10px;
+}
+.row {
+    display: flex;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
