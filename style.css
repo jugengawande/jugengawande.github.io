@@ -138,3 +138,67 @@ a {
         opacity: 1;
         }
 }
+
+
+.project-block {
+    width:60em;
+    line-height: 5rem ;
+}
+
+
+
+
+@media (pointer:none){
+
+    .project-block {
+        width:90em
+
+}
+}
+
+.techstack-list{
+    display: inline-block;
+    margin-top: 1em;
+    line-height: 2em; 
+}
+
+.techstack-item {
+    color: rgb(80, 80, 80);
+    float: left;
+
+    border-style: solid;
+    border: .5;
+    border-color: rgb(80, 80, 80);
+    border-radius: 2em;
+    
+    font: 14px;
+    font-weight: bold;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 10px; 
+
+}
+
+.fancy-btn {
+    border-style: solid;
+    border: .5;
+    border-color: grey;
+    padding: 1rem;
+    border-radius: 5em;
+
+
+    margin-top: 25px;
+    color: grey;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.fancy-btn:hover {
+    background-color: rgb(145, 114, 174);
+    color: rgb(57, 23, 72);
+    border-color: rgb(57, 23, 72);
+}
+
+.project-des {
+    padding: 25vh;
+}
