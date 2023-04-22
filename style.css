@@ -20,9 +20,10 @@ header {
 /* 
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px); */
+
     width: 100%;
-    /* position: fixed;     */
-    padding: 1em;
+ 
+    padding: 10px;
     height: 10vh;
 }
 
@@ -66,9 +67,9 @@ header {
     float: right;
     /* margin-right: 15px; */
     padding: 8px;
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 18px;
-    color: rgb(151, 151, 151);
+    color: rgb(48, 48, 48);
 
 }
 
@@ -86,30 +87,36 @@ a {
 /* Scroll behaviour */
 @media (min-height: 30em) {
     main {
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: y proximity;
+        scroll-behavior: smooth;
         height: 100vh;
         overflow-y: scroll;
         background-color: rgb(225, 225, 225);
+        /* background-color: rgb(60, 60, 60); */
         width: 100vw;
+
+        align-items: center;
     };
     .section {
         height: 100vh;
-        
-    
     };
 }
 
 .section {
+    
 
-    /* position: inherit; */
     /* scroll-snap-align: start; */
+    /* position:relative; */
     scroll-snap-align: start;
-    width:100%;
     padding-top: 10vh;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+
+    padding: 20px;
+    
+} 
+
 
 
 .fade-in {
@@ -123,12 +130,19 @@ a {
     }
     100% {
         opacity: 1;
-        }
+    }
 }
 
 
 .project-block {
     line-height: 5rem ;
+    background-color: rgb(225, 225, 225);
+    /* border-radius: 2%;
+    box-shadow: 2 2;
+    
+    /*width: inherit;
+    min-height: 6 vh; */
+    margin: 2%;
 }
 
 
@@ -145,7 +159,7 @@ a {
 .techstack-item {
     color: rgb(80, 80, 80);
     float: left;
-
+    
     border-style: solid;
     border: .5;
     border-color: rgb(80, 80, 80);
@@ -156,7 +170,7 @@ a {
     padding-left: 16px;
     padding-right: 16px;
     margin-left: 10px; 
-
+    
 }
 
 .fancy-btn {
@@ -165,8 +179,8 @@ a {
     border-color: grey;
     padding: 1rem;
     border-radius: 5em;
-
-
+    
+    
     margin: 25px 0 ;
     color: grey;
     background-color: rgb(225, 225, 225);
@@ -198,12 +212,12 @@ main::-webkit-scrollbar {
 }
 
 @media (max-width:450px){
-
+    
     .main{
         box-sizing: border-box!important;
         background-color: black;
     }
-
+    
     .col {
         
         flex:100%;
@@ -212,5 +226,90 @@ main::-webkit-scrollbar {
     .row{
         flex-wrap: wrap;
     };
+    
+}
 
+
+
+/* nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+nav a.active {
+    opacity: 1;
+} */
+
+
+
+.navbars {
+    background-color: rgb(225, 225, 225);
+
+    width: 5vw;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    left: 0;
+    }
+
+
+.sidebar {
+
+    display: flexbox;
+    width: 25px;
+    /* height: 100%; */
+    background-color: rgb(225, 225, 225);
+    padding-left: 15px;
+    align-content: stretch;
+
+
+}
+
+/* Style for the dots */
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 15px auto;
+    color: rgb(157, 157, 157);
+    font-size: large;
+    /* border-radius: 50%;
+    background-color: #bbb; */
+}
+
+
+/* .active {
+color: #2f2f2f;
+font-weight: bolder;
+} */
+
+.dot:hover{
+    font-weight: bolder;
+    color: rgb(57, 23, 72);;
+}
+
+
+.tests{
+    background-color:  rgb(225, 225, 225);
 }

@@ -9,7 +9,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jugen Gawande</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script> 
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -21,23 +24,38 @@
         <header style="background-color: rgb(225, 225, 225);">
 
             <div style = "display: inline;">
+                
                 <div class="navbar-items" style="float:left" >
                     <a href="./index.html"><h1 class="title is-3"><b style="color:rgb(145, 114, 174)">Jugen's</b> Projects</h1></a>
 
                 </div>
 
             
-                <a href="./project.html"> <div class="navbar-items">Projects</div>   </a> 
-                <a href="./blog.html"><div class="navbar-items">Blog</div> </a>
+                <a href="./project.html"> <div class="navbar-items">Projects</div>  </a> 
+                </div><a href="./blog.html"><div class="navbar-items">Blog</div></a>
                 <!-- <a href=""><div class="navbar-items">About</div></a> -->
             </div>
 
         </header> 
 
+        <div class="tests" style="display:inline-flex;">
+        
+        <div class="navbars" >
+            <div class="sidebar">
+                <a href="#overview"><div class="dot active">-</div></a>
+                <a href="#project-1"><div class="dot">1</div></a>
+                <a href="#project-2"><div class="dot">2</div></a>
+                <a href="#project-3"><div class="dot">3</div></a>
+    
+              </div>
+          
+            
+        </div>
+
         <main >
 
             <section class="section ">
-                <div class="project-block fade-in" >
+                <div class="project-block fade-in" id="overview" >
                     <div class="columns">
 
                         <div class="column">
@@ -79,8 +97,8 @@
             </section>
             
             
-            <section class="section">
-                <div class="project-block">
+            <section class="section" id="project-1">
+                <div class="project-block" >
                     <div>
                         <h1 class="subtitle is-5">PROJECT 1</h1>
                         <h1 class="title">My phone's a switchboard?</h1>
@@ -110,7 +128,7 @@
                                 </h1>
                                 
                             </div>
-                            <div style="width: 250px; line-height: 10px;"><a href=""><div class="fancy-btn">See detailed description &#8599;</div></a></div>
+                            <div style="width: 250px; line-height: 10px;"><a href="/project-desp/my-phone-switchboard.html"><div class="fancy-btn">See detailed description &#8599;</div></a></div>
                         </div>
     
                         
@@ -138,8 +156,8 @@
             </section>
             
             
-            <section class="section">
-                <div class="project-block" id="project-2">
+            <section class="section" id="project-2">
+                <div class="project-block" >
                     <div>
                         <h1 class="subtitle is-5">PROJECT 2</h1>
                         <h1 class="title">Keep the guests coming</h1>
@@ -173,7 +191,8 @@
                         <div class="col">
                             <h1 class="subtitle is-4" >
                                 What I learned:<br><br>
-                                
+                                End presn
+
                                 
                             </h1>
                             
@@ -184,8 +203,8 @@
                 </div>
             </section>
             
-            <section class="section">
-                <div class="project-block" id="project-3">
+            <section class="section" id="project-3">
+                <div class="project-block" >
                     <div>
                         <h1 class="subtitle is-5">PROJECT 3</h1>
                         <h1 class="title">What you selling?</h1>
@@ -215,7 +234,7 @@
                                 
                             </div>
         
-                            <div style="width: 250px;line-height: 10px;"><a href=""><div class="fancy-btn">See detailed description &#8599;</div></a></div>
+                            <div style="width: 250px;line-height: 10px;"><a href="project-desp/what-you-selling.html"><div class="fancy-btn">See detailed description &#8599;</div></a></div>
 
                         </div>
     
@@ -237,6 +256,9 @@
 
      
         </main>
+
+
+    </div>
     </body>
 
 
