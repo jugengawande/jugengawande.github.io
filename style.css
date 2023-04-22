@@ -6,14 +6,14 @@
     min-height: 102vh  ;
     background-color: rgb(0, 0, 0);
     padding: 3vh 10vw;
-    border-bottom-left-radius: 3em; 
-    border-bottom-right-radius: 3em; 
+    border-bottom-left-radius: 2em; 
+    border-bottom-right-radius: 2em; 
     text-align: justify;
     /* transform: translate(20px 0px 0px 0px); */
 
 }
 footer {
-    height: 10vh;    
+    height: 5vh;    
 }
 
 header {
@@ -41,7 +41,7 @@ header {
 
 
 .landing {
-    font-size: 18vh;
+    font-size: 15vh;
     text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
@@ -51,11 +51,11 @@ header {
 }
 
 
-@media screen and (max-device-width: 480px)
+@media screen and (max-device-width: 500px)
 {
 
     .landing{
-        font-size: 8vh;
+        font-size: 5vh;
 
     }
 
@@ -69,7 +69,7 @@ header {
     padding: 8px;
     font-weight: lighter;
     font-size: 18px;
-    color: rgb(48, 48, 48);
+    color: rgb(173, 173, 173);
 
 }
 
@@ -84,6 +84,7 @@ a {
 
 
 
+
 /* Scroll behaviour */
 @media (min-height: 30em) {
     main {
@@ -93,7 +94,7 @@ a {
         overflow-y: scroll;
         background-color: rgb(225, 225, 225);
         /* background-color: rgb(60, 60, 60); */
-        width: 100vw;
+        /* width: 80vw; */
 
         align-items: center;
     };
@@ -151,15 +152,18 @@ a {
 
 
 .techstack-list{
-    display: inline-block;
-    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: inherit;
+    margin-bottom: 25px;
     line-height: 2em; 
 }
 
 .techstack-item {
     color: rgb(80, 80, 80);
-    float: left;
-    
+    min-width: fit-content;
+    min-height: fit-content;
     border-style: solid;
     border: .5;
     border-color: rgb(80, 80, 80);
@@ -169,7 +173,9 @@ a {
     font-weight: bold;
     padding-left: 16px;
     padding-right: 16px;
+
     margin-left: 10px; 
+    margin-top: 10px; 
     
 }
 
@@ -194,7 +200,7 @@ a {
 }
 
 .project-des {
-    padding: 25vh;
+    padding: 50px;
 }
 
 .col {
@@ -211,7 +217,7 @@ main::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
 
-@media (max-width:450px){
+/* @media (max-width:450px){
     
     .main{
         box-sizing: border-box!important;
@@ -227,7 +233,7 @@ main::-webkit-scrollbar {
         flex-wrap: wrap;
     };
     
-}
+} */
 
 
 
@@ -265,24 +271,24 @@ nav a.active {
 .navbars {
     background-color: rgb(225, 225, 225);
 
-    width: 5vw;
+    min-width: 5vw;
     height: 90vh;
 
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center ;
     left: 0;
-    }
+}
 
 
 .sidebar {
-
+    
     display: flexbox;
-    width: 25px;
-    /* height: 100%; */
+    
     background-color: rgb(225, 225, 225);
-    padding-left: 15px;
+    
     align-content: stretch;
+    justify-content: center;
 
 
 }
@@ -306,10 +312,21 @@ font-weight: bolder;
 
 .dot:hover{
     font-weight: bolder;
-    color: rgb(57, 23, 72);;
+    color: rgb(57, 23, 72);
+
 }
 
 
 .tests{
     background-color:  rgb(225, 225, 225);
+    width: 100%;
+}
+
+
+img{
+
+
+    background-color: rgb(216, 216, 216);
+    margin-top: 18px;
+    padding: 1px;
 }
