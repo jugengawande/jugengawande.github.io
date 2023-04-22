@@ -1,6 +1,5 @@
 
 
-
 .main-body{
     width: 100%;
     min-height: 102vh  ;
@@ -55,7 +54,7 @@ header {
 {
 
     .landing{
-        font-size: 5vh;
+        font-size: 8vh;
 
     }
 
@@ -67,7 +66,7 @@ header {
     float: right;
     /* margin-right: 15px; */
     padding: 8px;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 18px;
     color: rgb(173, 173, 173);
 
@@ -90,7 +89,7 @@ a {
     main {
         scroll-snap-type: y proximity;
         scroll-behavior: smooth;
-        height: 100vh;
+        height: 90vh;
         overflow-y: scroll;
         background-color: rgb(225, 225, 225);
         /* background-color: rgb(60, 60, 60); */
